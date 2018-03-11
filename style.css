@@ -1,0 +1,75 @@
+/*----------------------------------------------------------------Navbar*/
+
+.navbar-nav {
+    margin: 0;
+}
+
+.nav>li>a {
+    color: white;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(2, 2, 200, 100);
+    border: 0;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 10px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.navbar-header .navbar-toggle:hover {
+    background-color: white;
+}
+
+.icon-bar {
+    background-color: blue;
+}
+
+.navbar-nav>.active>a:hover {
+    background-color: white;
+    color: blue;
+}
+
+.navbar-collapse .navbar-nav>.active>a:hover {
+    background-color: white;
+    color: blue;
+}
+
+.navbar-collapse {
+    padding: 0px;
+    margin-left: 50px;
+    overflow-x: visible;
+}
+
+
+/*--------------------------------------------------------------------------Banner image*/
+
+.logo {
+    background: url("/.git/assets/the_monkees_logo.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
