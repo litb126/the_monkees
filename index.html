@@ -6,14 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/style.css" type="text/css" />
 </head>
 
 <body>
 
-    <nav class="navbar">
+
+    <!----------------------------------------------------------------Navbar-->
+
+    <nav class="navbar-fixed-top">
         <div class="container-fluid navbar">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -25,9 +26,9 @@
 
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active li-home"><a href="#">Home</a></li>
-                    <li class="active li-band"><a href="#">The Band</a></li>
-                    <li class="active li-videos"><a href="#">Videos</a></li>
+                    <li class="active li-home"><a href="#top">Home</a></li>
+                    <li class="active li-band"><a href="#the-band">The Band</a></li>
+                    <li class="active li-videos"><a href="#videos">Videos</a></li>
                     <li class="active li-pictures"><a href="#">Pictures</a></li>
                     <li class="active li-tour"><a href="#">Tour</a></li>
                 </ul>
@@ -35,9 +36,101 @@
         </div>
     </nav>
 
-<img class=logo src="/.git/assets/the_monkees_logo.jpg" alt="The Monkees logo"/>
 
 
+    <!----------------------------------------------------------------Logo image-->
+
+    <a id="top"><img class=logo src=".git/assets/Images/the_monkees_logo.1.jpg"/></a>
+
+
+
+
+    <!------------------------------------------------------------------The band-->
+
+    <div class="container-wrapper">
+        <div class="container content-container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-header">
+                        <hr>
+                        <h2 class="text-uppercase band-heading" id="the-band">The band</h2>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="/.git/assets/Images/davy-jones.jpg" class="img-circle media-object" height=200px width=200px>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="band-name">Davy Jones</h3>
+                            <p>David Thomas Jones (30 December 1945 – 29 February 2012) was an English singer-songwriter, musician, actor and businessman best known as a member of the band the Monkees, and for starring in the TV series of the same name.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="/.git/assets/Images/micky-dolenz.jpg" class="img-circle media-object" height=200px width=200px>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="band-name">Micky Dolenz</h3>
+                            <p>George Michael Dolenz Jr. (born March 8, 1945) is an American actor, musician, television director, radio personality and theater director, best known as a vocalist and drummer of the 1960s pop/rock band the Monkees.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="/.git/assets/Images/mike-nesmith.jpg" class="img-circle media-object" height=200px width=200px>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="band-name">Mike Nesmith</h3>
+                            <p>Robert Michael Nesmith (born December 30, 1942) is an American musician, songwriter, actor, producer, novelist, businessman, and philanthropist, best known as a member of the pop rock band the Monkees and co-star of the TV
+                                series The Monkees (1966–1968).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="/.git/assets/Images/peter-tork.jpg" class="img-circle media-object" height=200px width=200px>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="band-name">Peter Tork</h3>
+                            <p>Peter Tork (born Peter Halsten Thorkelson, February 13, 1942) is an American musician and actor, best known as the keyboardist and bass guitarist of the Monkees.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------Video-->
+
+    <div class="container-wrapper">
+        <div class="container content-container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-header">
+                        <hr>
+                        <h2 class="text-uppercase band-heading" id="videos">Videos</h2>
+                        <hr>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="/.git/assets/Videos/TheMonkees.mp4" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>

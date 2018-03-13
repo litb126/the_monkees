@@ -17,8 +17,9 @@
     left: 0;
     width: 100%;
     z-index: 1;
-    background-color: rgba(2, 2, 200, 100);
+    background-color: #6498ea;
     border: 0;
+    border-radius: 0px;
 }
 
 .navbar-toggle {
@@ -38,17 +39,17 @@
 }
 
 .icon-bar {
-    background-color: blue;
+    background-color: #6498ea;
 }
 
 .navbar-nav>.active>a:hover {
     background-color: white;
-    color: blue;
+    color: #6498ea;
 }
 
 .navbar-collapse .navbar-nav>.active>a:hover {
     background-color: white;
-    color: blue;
+    color: #6498ea;
 }
 
 .navbar-collapse {
@@ -72,4 +73,20 @@
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+
+/*--------------------------------------------------------------------------The band*/
+
+.media {
+    padding-bottom: 40px;
+}
+
+.band-heading,
+.band-name {
+    color: #884683;
+}
+
+.band-heading {
+    text-align: center;
 }
