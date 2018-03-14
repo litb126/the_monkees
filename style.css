@@ -1,3 +1,14 @@
+/*----------------------------------------------------------------General styles*/
+
+.container {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 /*----------------------------------------------------------------Navbar*/
 
 .navbar-nav {
@@ -62,7 +73,7 @@
 /*--------------------------------------------------------------------------Banner image*/
 
 .logo {
-    background: url("/.git/assets/the_monkees_logo.jpg") no-repeat center center fixed;
+    background: url("/.git/assets/Images/the_monkees_logo.1.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -89,4 +100,36 @@
 
 .band-heading {
     text-align: center;
+}
+
+/*--------------------------------------------------------------------------Videos*/
+
+.flex-video video {
+    width: 100%;
+    height: auto;
+    background-color: rgb(204,99,69);
+}
+
+.video-heading {
+    color: rgb(204,99,69);
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------------Pictures*/
+
+.picture-heading {
+    color: rgb(28,103,68);
+    text-align: center;
+}
+
+.pictures img {
+    width: 100%;
+}
+
+.pictures {
+    padding: 20px;
+}
+
+.img-thumbnail {
+    border: 6px solid rgb(28,103,68)
 }
