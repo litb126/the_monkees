@@ -69,6 +69,33 @@
     overflow-x: visible;
 }
 
+.nav-social-icon a i {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding-right: 20px;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+ol, ul {
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.navbar-right ul li {
+    list-style-type: none;
+}
+
+/*--------------------------------------------------------------------------Nav social icon hover*/
+
+.nav-social-icon a i:hover {
+    color: rgb(204, 99, 69);
+}
+
 
 /*--------------------------------------------------------------------------Banner image*/
 
@@ -107,18 +134,18 @@
 .flex-video video {
     width: 100%;
     height: auto;
-    background-color: rgb(204,99,69);
+    background-color: rgb(204, 99, 69);
 }
 
 .video-heading {
-    color: rgb(204,99,69);
+    color: rgb(204, 99, 69);
     text-align: center;
 }
 
 /*--------------------------------------------------------------------------Pictures*/
 
 .picture-heading {
-    color: rgb(28,103,68);
+    color: rgb(28, 103, 68);
     text-align: center;
 }
 
@@ -131,5 +158,5 @@
 }
 
 .img-thumbnail {
-    border: 6px solid rgb(28,103,68)
+    border: 6px solid rgb(28, 103, 68)
 }
