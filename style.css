@@ -1,5 +1,15 @@
 /*----------------------------------------------------------------General styles*/
 
+.page-header {
+    padding-bottom: 0px;
+    margin: 40px 0 20px;
+    border-bottom: 0;
+}
+
+hr {
+    border-width: 3px;
+}
+
 .container {
     padding-right: 5px;
     padding-left: 5px;
@@ -81,7 +91,12 @@
     color: #ffffff;
 }
 
-ol, ul {
+.nav-social-icon a i:hover {
+    color: rgb(204, 99, 69);
+}
+
+ol,
+ul {
     margin-top: 4px;
     margin-bottom: 0px;
 }
@@ -90,11 +105,6 @@ ol, ul {
     list-style-type: none;
 }
 
-/*--------------------------------------------------------------------------Nav social icon hover*/
-
-.nav-social-icon a i:hover {
-    color: rgb(204, 99, 69);
-}
 
 
 /*--------------------------------------------------------------------------Banner image*/
@@ -134,7 +144,10 @@ ol, ul {
 .flex-video video {
     width: 100%;
     height: auto;
-    background-color: rgb(204, 99, 69);
+    background: url("https://img.rasset.ie/000bc3a2-800.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .video-heading {
@@ -159,4 +172,77 @@ ol, ul {
 
 .img-thumbnail {
     border: 6px solid rgb(28, 103, 68)
+}
+
+
+/*--------------------------------------------------------------------------Music*/
+
+.tracks-heading {
+    text-align: center;
+    color: #6498ea;
+}
+
+.track-title {
+    text-align: center;
+    color: #6498ea;
+}
+
+audio {
+    width: 100%;
+}
+
+.music-player {
+    padding: 50px;
+}
+
+
+/*------------------------------------------------------------Social media footer*/
+
+footer {
+    background-color: #6498ea;
+    color: #fafafa;
+    min-height: 150px;
+    margin: 0;
+}
+
+.social-links li a i {
+    width: 48px;
+    height: 48px;
+    padding: 20px 0;
+    border-radius: 50%;
+    font-size: 25px;
+    line-height: 7px;
+    text-align: center;
+    color: #6498ea;
+    background: #ffffff;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i:hover {
+    color: #ffffff;
+    background: rgb(204, 99, 69);
+}
+
+#footer-details {
+    margin: 20px;
+}
+
+
+/*------------------------------------------------------------Bookings*/
+
+.btn.btn-booking {
+    color: #6498ea;
+    margin-left: 3px;
+}
+
+.btn.btn-booking:hover {
+    color: #ffffff;
+    background-color: rgb(204, 99, 69);
 }

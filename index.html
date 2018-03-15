@@ -31,17 +31,16 @@
                     <li class="active li-band"><a href="#the-band">The Band</a></li>
                     <li class="active li-videos"><a href="#videos">Videos</a></li>
                     <li class="active li-pictures"><a href="#pictures">Pictures</a></li>
-                    <li class="active li-tour"><a href="#">Social Media</a></li>
+                    <li class="active li-tour"><a href="#tracks">Tracks</a></li>
                 </ul>
+                <button type="button" class="btn btn-booking" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
                 <div class="navbar-right hidden-xs">
                     <ul class="list-inline nav-social-icon">
-                    <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a target="_blank" href="#"><i class="fa fa-pinterest"></i></a></li>
-                    <li><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
-                </ul>
+                        <li><a target="_blank" href="https://en-gb.facebook.com/TheMonkees/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/themonkees/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/user/themonkees"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -186,6 +185,106 @@
         </div>
     </div>
 
+
+    <!------------------------------------------------------------------Music-->
+
+    <div class="container-wrapper">
+        <div class="container content-container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-header">
+                        <hr>
+                        <h2 class="text-uppercase tracks-heading" id="tracks">Tracks</h2>
+                        <hr>
+                        <div class="music-player colxs-12 col-md-6">
+                            <h3 class="track-title">I'm a Believer (1967)</h3>
+                            <p class="track-bio">"I'm a Believer" is a song composed by Neil Diamond and recorded by The Monkees in 1966 with the lead vocals by Micky Dolenz. </p>
+                            <audio controls>
+                              <source src="/.git/assets/Music/I'm a Believer - The Monkees.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="music-player colxs-12 col-md-6">
+                            <h3 class="track-title">Daydream Believer (1968)</h3>
+                            <p class="track-bio">"Daydream Believer" is a song composed by John Stewart shortly before he left the Kingston Trio. It was originally recorded by The Monkees, with Davy Jones singing lead vocals.</p>
+                            <audio controls>
+                              <source src="/.git/assets/Music/The Monkees - Daydream Believer (Official Music Video).mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="music-player colxs-12 col-md-6">
+                            <h3 class="track-title">Last Train to Clarksville (1966)</h3>
+                            <p class="track-bio">"Last Train to Clarksville" was the debut single by The Monkees. It was released August 16, 1966 and later included on the group's 1966 self-titled album, which was released on October 10, 1966.</p>
+                            <audio controls>
+                              <source src="/.git/assets/Music/The Monkees - Last Train To Clarksville 1966.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="music-player colxs-12 col-md-6">
+                            <h3 class="track-title">Stepping' Stone (1967)</h3>
+                            <p class="track-bio"></p>It is best known as a hit for The Monkees (US #20), released in November 1966, (making it the first Monkees B-side to chart).</p>
+                            <audio controls>
+                              <source src="/.git/assets/Music/The Monkees - Steppin' Stone.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------Bookings footer-->
+
+
+    <footer class="container-fluid">
+        <div id="footer-details bookings" class="row">
+            <div class="col-xs-6 col-sm-8 col-md-9">
+                <h4 class="uppercase general-sub">Book us for an event</h4>
+                <p class="inline-block">
+                    If you'd like to enquire about booking us for a gig/event, please <button type="button" class="btn btn-booking" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                </p>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <h4 class="uppercase general-sub">Social Networks</h4>
+                <ul class="list-inline nav-right social-links">
+                    <li><a target="_blank" href="https://en-gb.facebook.com/TheMonkees/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/themonkees/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/user/themonkees"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!------------------------------------------------------------------Bookings form-->
+
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 
