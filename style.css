@@ -25,13 +25,8 @@ hr {
     margin: 0;
 }
 
-.nav>li>a {
-    color: white;
-    padding-left: 10px;
-    margin: 0px;
-}
-
 .navbar {
+    padding-left: 0;
     margin-bottom: 0;
     position: absolute;
     top: 0;
@@ -41,6 +36,22 @@ hr {
     background-color: #6498ea;
     border: 0;
     border-radius: 0px;
+}
+
+.nav li {
+    color: white;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.nav>li>a {
+    color: white;
+}
+
+.nav>li>a:hover {
+    color: rgb(204, 99, 69);
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .navbar-toggle {
@@ -56,20 +67,16 @@ hr {
 }
 
 .navbar-header .navbar-toggle:hover {
-    background-color: white;
+    background-color: rgb(204, 99, 69);
 }
 
 .icon-bar {
     background-color: #6498ea;
 }
 
-.navbar-nav>.active>a:hover {
-    background-color: white;
-    color: #6498ea;
-}
 
-.navbar-collapse .navbar-nav>.active>a:hover {
-    background-color: white;
+.navbar-collapse .navbar-nav>li:hover {
+    background-color: transparent;
     color: #6498ea;
 }
 
@@ -137,6 +144,11 @@ ul {
 
 .band-heading {
     text-align: center;
+}
+
+.band-bio {
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 /*--------------------------------------------------------------------------Videos*/
@@ -240,9 +252,18 @@ footer {
 .btn.btn-booking {
     color: #6498ea;
     margin-left: 3px;
+    padding: 0px 4px;
+    font-size: 12px;
 }
 
 .btn.btn-booking:hover {
     color: #ffffff;
     background-color: rgb(204, 99, 69);
+}
+
+.btn.btn-enquiry {
+    background-color: #6498ea;
+    color: white;
+    padding: 8px;
+    font-size: inherit;
 }

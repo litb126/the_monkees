@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>The Monkees</title>
     <meta charset="utf-8">
@@ -9,9 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="/style.css" type="text/css" />
 </head>
-
 <body>
-
 
     <!----------------------------------------------------------------Navbar-->
 
@@ -27,13 +24,14 @@
 
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active li-home"><a href="#home">Home</a></li>
-                    <li class="active li-band"><a href="#the-band">The Band</a></li>
-                    <li class="active li-videos"><a href="#videos">Videos</a></li>
-                    <li class="active li-pictures"><a href="#pictures">Pictures</a></li>
-                    <li class="active li-tour"><a href="#tracks">Tracks</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#the-band">The Band</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#pictures">Pictures</a></li>
+                    <li><a href="#tracks">Tracks</a></li>
+                    <li data-toggle="modal" data-target="#myModal"><a href="#">Book Us</a></li>
                 </ul>
-                <button type="button" class="btn btn-booking" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
 
                 <div class="navbar-right hidden-xs">
                     <ul class="list-inline nav-social-icon">
@@ -51,7 +49,7 @@
 
     <!----------------------------------------------------------------Logo image-->
 
-    <a id="home"><img class=logo src=".git/assets/Images/the_monkees_logo.1.jpg"/></a>
+    <a id="home"><img class=logo src="/.git/assets/Images/the_monkees.jpg"/></a>
 
 
 
@@ -70,7 +68,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="band-bio col-xs-12 col-sm-12 col-md-6">
                     <div class="media">
                         <div class="media-left">
                             <img src="/.git/assets/Images/davy-jones.jpg" class="img-circle media-object" height=200px width=200px>
@@ -82,7 +80,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="band-bio col-xs-12 col-sm-12 col-md-6">
                     <div class="media">
                         <div class="media-left">
                             <img src="/.git/assets/Images/micky-dolenz.jpg" class="img-circle media-object" height=200px width=200px>
@@ -94,7 +92,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="band-bio col-xs-12 col-sm-12 col-md-6">
                     <div class="media">
                         <div class="media-left">
                             <img src="/.git/assets/Images/mike-nesmith.jpg" class="img-circle media-object" height=200px width=200px>
@@ -107,7 +105,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="band-bio col-xs-12 col-sm-12 col-md-6">
                     <div class="media">
                         <div class="media-left">
                             <img src="/.git/assets/Images/peter-tork.jpg" class="img-circle media-object" height=200px width=200px>
@@ -240,13 +238,13 @@
 
     <footer class="container-fluid">
         <div id="footer-details bookings" class="row">
-            <div class="col-xs-6 col-sm-8 col-md-9">
+            <div class="col-xs-5 col-sm-8 col-md-9">
                 <h4 class="uppercase general-sub">Book us for an event</h4>
                 <p class="inline-block">
-                    If you'd like to enquire about booking us for a gig/event, please <button type="button" class="btn btn-booking" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                    If you'd like to enquire about booking us for a gig/event, please <button type="button" class="btn btn-booking" data-toggle="modal" data-target="#myModal">CLICK HERE</button>
                 </p>
             </div>
-            <div class="col-xs-6 col-sm-4 col-md-3">
+            <div class="col-xs-7 col-sm-4 col-md-3">
                 <h4 class="uppercase general-sub">Social Networks</h4>
                 <ul class="list-inline nav-right social-links">
                     <li><a target="_blank" href="https://en-gb.facebook.com/TheMonkees/"><i class="fa fa-facebook"></i></a></li>
@@ -262,30 +260,50 @@
     <!------------------------------------------------------------------Bookings form-->
 
 
-    <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h5 class="modal-title" id="exampleModalLabel">Enquire about booking us for an event</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
                 </div>
                 <div class="modal-body">
-                    <p>Some text in the modal.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full name</label>
+                            <input type="password" class="form-control" id="fullname" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Date of event</label>
+                            <div id="event-date">
+                                <input type="date" class="date-event" id="date" placeholder="DD/MM/YYYY">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Time of event</label>
+                            <div id="event-time">
+                                <input type="time" class="time-event" id="date" placeholder="00:00">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Additional information</label>
+                            <input type="password" class="form-control" id="info" placeholder="Please let us know if you have any special requests">
+                        </div>
+                        <button type="submit" class="btn btn-enquiry">Send enquiry!</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
